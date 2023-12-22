@@ -214,7 +214,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=200, n_batc
             print('>%d, %d/%d, d1=%.3f, d2=%.3f g=%.3f' %
                   (i + 1, j + 1, bat_per_epo, d_loss1, d_loss2, g_loss))
 
-        # Save generated images at multiples of 10 epochs
+        # save generated images at multiples of 10 epochs
         if (i + 1) % 10 == 0:
             latent_points, labels = generate_latent_points(latent_dim, 10)
             generated_images = g_model.predict([latent_points, labels])
