@@ -86,7 +86,7 @@ test_images_10_flat = reshape_cifar_images(test_images_10)
 train_images_100_flat = reshape_cifar_images(train_images_100, CLASS_SUBSET)
 test_images_100_flat = reshape_cifar_images(test_images_100)
 
-# Perform classification for KNN
+# perform classification for KNN
 print("**************\nKNN Classifier\n**************")
 knn = KNNClassifier()
 
