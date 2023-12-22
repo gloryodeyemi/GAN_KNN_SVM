@@ -32,7 +32,7 @@ def save_generated_images(examples, labels, output_dir):
 
 # create and save a plot of generated images
 def save_plot(examples, labels):
-    # Display a subset of the generated images with labels in a subplot
+    # display a subset of the generated images with labels in a subplot
     subset_samples = 10
     num_rows, num_cols = 2, 5
     subset_images = examples[:subset_samples]
@@ -70,7 +70,7 @@ X = model.predict([latent_points, labels])
 # scale from [-1,1] to [0,1]
 X = (X + 1) / 2.0
 
-# Save generated images for classification later
+# save generated images for classification later
 output_directory = 'data/generated_images'
 save_generated_images(X, labels, output_directory)
 
